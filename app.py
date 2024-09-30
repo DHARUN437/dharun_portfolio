@@ -16,9 +16,12 @@ with open(css_file) as f:
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
+    
+    
+st.markdown("<marquee behavior='scroll' direction='left' style='font-size:30px;'>Welcome to my portfolio</marquee>", unsafe_allow_html=True)
 
 img = Image.open("assets\WhatsApp Image 2024-09-10 at 2.32.55 PM.jpeg")
-st.title("Welcome to my portfolio")
+
 
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
