@@ -10,11 +10,11 @@ st.set_page_config(page_title="DHARUN Portfolio",
                    layout="wide",
 )
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-resume_file = current_dir/r"assets\Dharun_Datascientist.pdf"
-css_file = current_dir/r"styles\homepage.css"
+resume_file = current_dir/"assets"/"Dharun_Datascientist.pdf"
+css_file = current_dir/"styles"/"homepage.css"
 
-with open(css_file):
-    st.markdown("<style>{}</style>".format(css_file.read()), unsafe_allow_html=True)
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
