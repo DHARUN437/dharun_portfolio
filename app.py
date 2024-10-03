@@ -21,7 +21,7 @@ with open(resume_file, "rb") as pdf_file:
     
 st.markdown("<marquee behavior='scroll' direction='left' style='font-size:30px;'>Welcome to my portfolio</marquee><br><br><br>", unsafe_allow_html=True)
 
-img = Image.open('assets\profile.png')
+img = Image.open('assets/profile.png')
 
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
