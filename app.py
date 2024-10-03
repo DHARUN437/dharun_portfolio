@@ -21,7 +21,7 @@ with open(resume_file, "rb") as pdf_file:
     
 st.markdown("<marquee behavior='scroll' direction='left' style='font-size:30px;'>Welcome to my portfolio</marquee><br><br><br>", unsafe_allow_html=True)
 
-img = Image.open("assets\WhatsApp Image 2024-10-03 at 4.50.36 PM-modified.png")
+img = Image.open(r"assets\WhatsApp Image 2024-10-03 at 4.50.36 PM-modified.png")
 
 with st.container():
     left_column, middle_column, right_column = st.columns((1,0.2,0.6))
@@ -46,7 +46,7 @@ with st.container():
 
 st.subheader("Education", divider="red")
 
-srcas = Image.open("assets\download-modified.png")
+srcas = Image.open(r"assets\download-modified.png")
 
 image_column, text_column = st.columns((1,5))
 with image_column:
@@ -60,7 +60,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Experience", divider="red")
 
-qtree = Image.open("assets\qtree-modified.png")
+qtree = Image.open(r"assets\qtree-modified.png")
 
 with st.container():
     image_column, text_column = st.columns((1,5))
