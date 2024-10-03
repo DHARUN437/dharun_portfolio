@@ -46,7 +46,7 @@ with st.container():
 
 st.subheader("Education", divider="red")
 
-srcas = Image.open(r"assets\download-modified.png")
+srcas = Image.open("assets/download-modified.png")
 
 image_column, text_column = st.columns((1,5))
 with image_column:
@@ -60,7 +60,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Experience", divider="red")
 
-qtree = Image.open(r"assets\qtree-modified.png")
+qtree = Image.open("assets/qtree-modified.png")
 
 with st.container():
     image_column, text_column = st.columns((1,5))
@@ -160,9 +160,9 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Major Projects", divider='red')
 
-cyber = Image.open(r'assets\cyber_bully.png')
-canc = Image.open(r"assets\brest_cancer.png")
-res = Image.open(r"assets\res_review.png")
+cyber = Image.open('assets/cyber_bully.png')
+canc = Image.open("assets/brest_cancer.png")
+res = Image.open("assets/res_review.png")
 
 with st.container():
     image_column, text_column = st.columns((1.3,3))
@@ -236,25 +236,25 @@ st.subheader("Other Projects", divider= 'red')
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image(r"assets\salary.png", caption="Software developer salary prediction", use_column_width=True)
+    st.image("assets/salary.png", caption="Software developer salary prediction", use_column_width=True)
 
 with col2:
-    st.image(r"assets\heart.png", caption="Heart Disease prediction", use_column_width=True)
+    st.image("assets/heart.png", caption="Heart Disease prediction", use_column_width=True)
 
 with col3:
-    st.image(r"assets\gold_price.png", caption="Gold price prediction", use_column_width=True)
+    st.image("assets/gold_price.png", caption="Gold price prediction", use_column_width=True)
     
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image(r"assets\wine.png", caption="Wine quality prediction", use_column_width=True)
+    st.image("assets/wine.png", caption="Wine quality prediction", use_column_width=True)
 
 with col2:
-    st.image(r"assets\car_price.png", caption="Car price prediction", use_column_width=True)
+    st.image("assets/car_price.png", caption="Car price prediction", use_column_width=True)
 
 with col3:
-    st.image(r"assets\diabetics.png", caption="Diabetics prediction", use_column_width=True)
+    st.image("assets/diabetics.png", caption="Diabetics prediction", use_column_width=True)
     
     
 st.subheader("Certifications", divider="red")
