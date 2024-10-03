@@ -10,8 +10,8 @@ st.set_page_config(page_title="DHARUN Portfolio",
                    layout="wide",
 )
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-resume_file = current_dir / "assets\Dharun_Datascientist.pdf"
-css_file = current_dir / 'styles\homepage.css'
+resume_file = current_dir/"assets\Dharun_Datascientist.pdf"
+css_file = current_dir/"styles\homepage.css"
 
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
@@ -137,7 +137,7 @@ st.markdown(
             <div class="card">
                 <i class="fa fa-code card-icon"></i>
             </div>
-            <div class="card-description">Programming language : Python <br> Database : MySQL Database</div>
+            <div class="card-description">Programming language : Python <br> Database : SQL Database</div>
         </div>
         <div class="card-item">
             <div class="card">
@@ -160,7 +160,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Major Projects", divider='red')
 
-cyber = Image.open('assets\cyber_bully.png')
+cyber = Image.open(r'assets\cyber_bully.png')
 canc = Image.open(r"assets\brest_cancer.png")
 res = Image.open(r"assets\res_review.png")
 
@@ -294,7 +294,7 @@ st.write('''
 st.markdown("<br>", unsafe_allow_html=True)
 st.subheader("Contact",divider='red')
 
-st.write("[📧 Email : bdharun1912@gmail.com](bdharun1912@gmail.com)")
+st.write("📧 Email : bdharun1912@gmail.com")
 st.write("📞 Phone : 9791817437")
 st.markdown(social_icons(32, 32, LinkedIn="https://www.linkedin.com/in/bdharun19/", 
                                          GitHub="https://github.com/DHARUN437", 
